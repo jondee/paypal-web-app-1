@@ -108,7 +108,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>web-app</finalName>
+		<finalName>boa-pipeline-application</finalName>
 		
 		<plugins>
 			<plugin>
