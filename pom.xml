@@ -111,7 +111,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>boa-pipeline-application</finalName>
+		<finalName>Group-18 04062022 </finalName>
 		
 		<plugins>
 			<plugin>
