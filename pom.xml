@@ -111,7 +111,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>Group-18 04062022 </finalName>
+		<finalName>Group-18 04062022 _ Scripted </finalName>
 		
 		<plugins>
 			<plugin>
