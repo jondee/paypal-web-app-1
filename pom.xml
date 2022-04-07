@@ -111,7 +111,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>Group-18 04062022 _ Declarative </finalName>
+		<finalName>Group-18 04062022 _ SharedLibary </finalName>
 		
 		<plugins>
 			<plugin>
