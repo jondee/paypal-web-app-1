@@ -3,14 +3,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.mt</groupId>
-	<artifactId>boa-web-pipeline-application</artifactId>
+	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	
-	<name>boa-web-pipeline-application</name>
+	<name>maven-web-application</name>
 
-	<description>BOA Web Project for Jpipeline   Project</description>
-
+	<description>Maven Web Project for Java Project</description>
 	<organization>
 		<name>Landmark Technologies</name>
 		<url>http://landmarktechnologies.com/</url>
@@ -21,15 +20,14 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-        
-       <!-- Made changes to Sonar 03/24/2022 -->
+
+        <!-- Made changes to Sonar 09/19/2022 -->
 		<sonar.host.url>http://192.168.108.154:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
 		<sonar.password>admin</sonar.password>
-
+        
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
 	</properties>
 
 	<dependencies>
@@ -62,7 +60,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- compile dependencies -->
+		<!-- compile dependencies  -->
 
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -95,23 +93,26 @@
 		</dependency>
 		
 	</dependencies>
+	
 	<distributionManagement>
+	 
+         
+         <!-- Made changes to Nexus 09/19/2022 -->
 	    <repository>
 	      <id>nexus</id>
-	      <name>BOFA Releases Nexus Repository</name>
-	      <url>http://192.168.108.155:8081/repository/BOFA_PIPELINE_RELEASE/</url>
+	      <name>Tesla Releases Nexus Repository</name>
+	      <url>http://192.168.108.139:8081/repository/tesla-fe-releases/</url> 
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>BOFA Snapshot Nexus Repository </name>
-	      <url>http://192.168.108.155:8081/repository/BOFA_PIPELINE_SNAPSHOT/</url>
+	      <name>Tesla Snapshot Nexus Repository </name>
+	      <url>http://192.168.108.139:8081/repository/tesla-fe-snapshots/</url>
 	    </snapshotRepository>
-	    
 	</distributionManagement>
 	
 	<build>
-		<finalName>Group-18 04062022 _ SharedLibary </finalName>
+		<finalName>tesla</finalName>
 		
 		<plugins>
 			<plugin>
@@ -131,7 +132,7 @@
 				<configuration>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<webApp>
-						<contextPath>/boa-web-pipeline-application</contextPath>
+						<contextPath>/maven-web-application</contextPath>
 					</webApp>
 				</configuration>
 			</plugin>
@@ -144,7 +145,7 @@
 					<downloadSources>true</downloadSources>
 					<downloadJavadocs>true</downloadJavadocs>
 					<wtpversion>2.0</wtpversion>
-					<wtpContextName>boa-web-pipeline-application</wtpContextName>
+					<wtpContextName>maven-web-application</wtpContextName>
 				</configuration>
 			</plugin>
 			
